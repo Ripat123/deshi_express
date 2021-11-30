@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Courier Merchant</string>
+    <string name="app_name">Deshi Express</string>
     <string name="login">Login</string>
     <string name="registration">Registration</string>
     <string name="about_us">About Us</string>
@@ -8,11 +8,11 @@
     <string name="suggestions">Suggestions</string>
     <string name="more">…</string>
     <string name="top_title">আমাদের সেবাসমূহ</string>
-    <string name="why_t">কেন ফিক্সড কুরিয়ার</string>
+    <string name="why_t">কেন দেশি এক্সপ্রেস</string>
     <string name="blog_t">আমাদের ব্লগ</string>
     <string name="top_details">অনলাইন মার্চেন্টদের সুবিধা এবং স্বাচ্ছন্দ্য নিশ্চিন্ত করে ব্যবসাকে আরো সহজ, স্মার্ট এবং গ্রাহকদের উন্নততর
 সেবা প্রদান করতে আমরা নিয়ে এসেছি দ্রুত, নির্ভরযোগ্য এবং নিরাপদ ডেলিভারি সুবিধা।</string>
-    <string name="why_details">কফিক্সড কুরিয়ার আপনার ব্যবসার গুরুত্ব বোঝে প্রদান করে ব্যবসার জন্য সবচেয়ে সুবিধাজনক ডেলিভারি সার্ভিস</string>
+    <string name="why_details">দেশি এক্সপ্রেস কুরিয়ার আপনার ব্যবসার গুরুত্ব বোঝে প্রদান করে ব্যবসার জন্য সবচেয়ে সুবিধাজনক ডেলিভারি সার্ভিস</string>
     <string name="developed_by_skill_based_it">Developed by Skill Based IT</string>
     <string name="name">Name</string>
     <string name="phone_number">Phone Number:</string>
@@ -111,7 +111,9 @@
     <string name="edit_more_txt">* If you want to edit more details, then you can go this location.</string>
     <string name="drawer_menu_settings"><![CDATA[Drawer Menu > Settings]]></string>
     <string name="details">Details</string>
-    <string name="support_text">ফিক্সড কুরিয়ার ডেলিভারি সার্ভিস সম্পর্কিত যে কোনও সমস্যার সমাধানের জন্য আমাদের কল সেন্টারে কল করুন। আমরা গ্রাহকদের সর্বোত্তম সেবা প্রদানের লক্ষ্যে ২৪/৭ ঘন্টা সার্পোট দিয়ে থাকি। ফিক্সড কুরিয়ার সার্পোট টিম সর্বদা গ্রাহকের যে কোন সমস্য অল্প সময়ের মধ্যে সমাধান করে, গ্রাহককে নিশ্চিত করেন। ২৪/৭ হেল্প ডেস্ক-018XX XXX XXX service@fixedcourier.com.bd</string>
+    <string name="support_text">দেশি এক্সপ্রেস কুরিয়ার ডেলিভারি সার্ভিস সম্পর্কিত যে কোনও সমস্যার সমাধানের জন্য আমাদের কল
+        সেন্টারে কল করুন। আমরা গ্রাহকদের সর্বোত্তম সেবা প্রদানের লক্ষ্যে ২৪/৭ ঘন্টা সার্পোট দিয়ে থাকি। দেশি এক্সপ্রেস কুরিয়ার সার্পোট টিম
+        সর্বদা গ্রাহকের যে কোন সমস্য অল্প সময়ের মধ্যে সমাধান করে, গ্রাহককে নিশ্চিত করেন। ২৪/৭ হেল্প ডেস্ক-01818214141 deshiexpress22@gmail.com</string>
     <string name="show">Show</string>
     <string name="regular">Regular Day</string>
     <string name="customer_invoice">Customer Invoice</string>
@@ -150,9 +152,9 @@
     <string name="invoice_update">Invoice Update</string>
     <string name="click">seller registration</string>
     <string name="latest_parcel">Latest Parcel</string>
-    <string name="office_address">2nd floor jatrabari dhaka 1204</string>
-    <string name="office_phone">01758956666</string>
-    <string name="office_site">www.fixedcourier.com</string>
+    <string name="office_address">4/9/B Iqbal Road,Mohammadpur,Dhaka-1207</string>
+    <string name="office_phone">01818214141</string>
+    <string name="office_site">www.deshiexpress.com</string>
     <string name="ship_to">Ship To</string>
     <string name="payment_details">PAYMENT DETAILS</string>
     <string name="total_ammount_delivered">Total Amount Delivered</string>
