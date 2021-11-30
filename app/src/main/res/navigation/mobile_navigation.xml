@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sbitbd.deshi_express.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sbitbd.deshi_express.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.sbitbd.deshi_express.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_area"
+        android:name="com.sbitbd.deshi_express.ui.coverage_area.coverage_area"
+        android:label="@string/coverage_area"
+        tools:layout="@layout/coverage_area_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pricing"
+        android:name="com.sbitbd.deshi_express.ui.pricing.pricing"
+        android:label="@string/pricing"
+        tools:layout="@layout/pricing_fragment" />
+
+    <fragment
+        android:id="@+id/nav_return"
+        android:name="com.sbitbd.deshi_express.ui.return_order.return_order"
+        android:label="@string/return_order"
+        tools:layout="@layout/fragment_return_order" />
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.sbitbd.deshi_express.ui.all_consignments"
+        android:label="@string/all"
+        tools:layout="@layout/all_consignments_fragment" />
+    <fragment
+        android:id="@+id/nav_payments"
+        android:name="com.sbitbd.deshi_express.ui.view_payments.payments"
+        android:label="@string/view_payments"
+        tools:layout="@layout/fragment_payments" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.sbitbd.deshi_express.ui.settings.settings"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.sbitbd.deshi_express.ui.support.support"
+        android:label="@string/support"
+        tools:layout="@layout/fragment_support" />
+</navigation>

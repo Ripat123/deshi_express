@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sbitbd.deshi_express">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"-->
+<!--        tools:ignore="ScopedStorage" />-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CourierMerchant.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.sbitbd.deshi_express.balance_details.balance_details"
+            android:exported="true"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar"/>
+        <activity
+            android:name="com.sbitbd.deshi_express.website.web_view"
+            android:exported="true" />
+        <activity
+            android:name="com.sbitbd.deshi_express.success_view.success"
+            android:exported="true"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.view_form.view_form"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.details.details_one"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.profile.profile"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.search.search"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.flash.flash_screen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sbitbd.deshi_express.parcel.parcel"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.Main_dashboard"
+            android:label="@string/title_activity_main_dashboard"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar.NoActionBar" />
+        <activity android:name="com.sbitbd.deshi_express.register.register" />
+        <activity android:name="com.sbitbd.deshi_express.login.login" />
+        <activity android:name="com.sbitbd.deshi_express.card_details.details_card" />
+        <activity
+            android:name="com.sbitbd.deshi_express.terms.terms"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.suggest.suggest"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.service.service_charge"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity
+            android:name="com.sbitbd.deshi_express.about.about_us"
+            android:theme="@style/Theme.CourierMerchant.NoActionBar" />
+        <activity android:name="com.sbitbd.deshi_express.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

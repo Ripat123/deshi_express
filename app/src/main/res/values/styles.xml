@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TopCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut1
+        </item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut1" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">5dp</item>
+        <item name="cornerSizeBottomRight">5dp</item>
+        <item name="cornerSizeBottomLeft">30dp</item>
+    </style>
+
+    <style name="shape1" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut2
+        </item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut2" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopRight">100dp</item>
+    </style>
+    <style name="shape2" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut3
+        </item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut3" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopLeft">100dp</item>
+    </style>
+    <style name="shape3" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut4
+        </item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut4" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeBottomRight">100dp</item>
+    </style>
+    <style name="shape4" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut5
+        </item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut5" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeBottomLeft">100dp</item>
+    </style>
+
+    <style name="Widget.Theme.CourierMerchant.NoActionBar.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.CourierMerchant.NoActionBar.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+        // custom tab text
+    <style name="customTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+        // round dialog
+    <style name="RoundShapeTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance</item>
+    </style>
+
+    <style name="RoundShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

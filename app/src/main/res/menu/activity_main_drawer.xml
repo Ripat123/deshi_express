@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_round_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_query_stats_24"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_round_manage_search_24"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_parcel"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"
+            android:title="@string/parcel" />
+        <item
+            android:id="@+id/nav_area"
+            android:icon="@drawable/ic_baseline_share_location_24"
+            android:title="@string/coverage_area" />
+        <item
+            android:id="@+id/nav_pricing"
+            android:icon="@drawable/ic_round_price_check_24"
+            android:title="@string/pricing" />
+        <item
+            android:id="@+id/nav_return"
+            android:icon="@drawable/ic_round_keyboard_return_24"
+            android:title="@string/return_order" />
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_round_dashboard_24"
+            android:title="@string/all" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_round_payments_24"
+            android:title="@string/view_payments" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_round_search_deep24"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_round_settings_24"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_round_support_agent_24"
+            android:title="@string/support" />
+    </group>
+</menu>

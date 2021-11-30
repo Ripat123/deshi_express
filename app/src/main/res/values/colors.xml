@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="normDark">#292929</color>
+    <!--    <color name="main_color">#7E0EFF</color>-->
+    <color name="main_color_old">#3B70E6</color>
+    <color name="main_color">#00A65A</color>
+    <color name="deep_main">#009551</color>
+    <color name="deep_main_old">#004FFF</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#412196F3</color>
+    <color name="shape_color1">#562196F3</color>
+    <color name="back_color1">#5252B2FF</color>
+    <color name="opac">#00000000</color>
+
+    <item name="color1" type="color">#b536f0</item>
+    <item name="color2" type="color">#0a6fd3</item>
+    <item name="color3" type="color">#483d8b</item>
+    <item name="color4" type="color">#ffa100</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="main_center">#4CAF50</color>
+    <color name="main_start">#72D676</color>
+    <color name="second_color">#2E00A65A</color>
+    <color name="camera_color">#4800A0FF</color>
+</resources>
