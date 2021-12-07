@@ -465,7 +465,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/parcel_process_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -476,7 +476,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -557,7 +557,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/second_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -567,7 +567,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -638,7 +638,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/third_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -648,7 +648,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -736,7 +736,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/fourth_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -745,7 +745,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -822,7 +822,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/fifth_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -831,7 +831,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -908,7 +908,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/sixth_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -917,7 +917,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -995,7 +995,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/eighth_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -1004,7 +1004,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView
@@ -1082,7 +1082,7 @@
                             android:layout_height="30dp"
                             android:layout_marginStart="8dp"
                             app:cardBackgroundColor="@color/main_color"
-                            app:cardCornerRadius="100dp"
+                            app:cardCornerRadius="25dp"
                             app:cardElevation="0dp"
                             app:layout_constraintBottom_toBottomOf="@+id/seventh_card"
                             app:layout_constraintStart_toStartOf="parent"
@@ -1091,7 +1091,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="1dp"
-                                app:cardCornerRadius="100dp"
+                                app:cardCornerRadius="25dp"
                                 app:cardElevation="0dp">
 
                                 <ImageView

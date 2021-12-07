@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginEnd="5dp"
-            android:fontFamily="@font/volkhov_bold"
+            android:fontFamily="@font/poppins_medium"
             android:maxLines="1"
             android:text="@string/merchant_profile"
             android:textAlignment="textStart"
@@ -83,12 +83,13 @@
                         android:id="@+id/img_edit"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:cardCornerRadius="100dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:tooltipText="@string/img_upload"
+                        app:cardCornerRadius="25dp"
                         app:layout_constraintBottom_toBottomOf="@+id/profile_img"
                         app:layout_constraintEnd_toEndOf="@+id/profile_img">
+
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -125,9 +126,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:text="@string/owner_name"
                         android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView10"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/divider11" />
 
@@ -137,9 +139,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:text="@string/company_information"
                         android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView11"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -149,9 +152,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:text="@string/phone_number"
                         android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView12"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -161,9 +165,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:text="@string/email"
                         android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView13"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -173,7 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:text="@string/full_address"
                         android:textSize="15sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -184,7 +189,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView9"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -197,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView10"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -209,7 +214,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView11"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -221,9 +226,9 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                        app:layout_constraintBottom_toTopOf="@+id/address_nt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView12" />
@@ -233,9 +238,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/textView13"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView13" />
@@ -250,7 +254,7 @@
                         android:background="?android:attr/listDivider"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                        app:layout_constraintTop_toBottomOf="@+id/address_nt" />
 
                     <TextView
                         android:id="@+id/textView14"
@@ -268,7 +272,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/volkhov_bold"
+                        android:fontFamily="@font/poppins_semibold"
                         android:text="@string/drawer_menu_settings"
                         android:textSize="17sp"
                         app:layout_constraintStart_toStartOf="@+id/textView14"
