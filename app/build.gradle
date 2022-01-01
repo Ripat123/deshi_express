@@ -56,4 +56,6 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
     implementation 'com.github.yalantis:ucrop:2.2.6'
     implementation 'com.karumi:dexter:6.2.3'
+    implementation 'com.github.basusingh:BeautifulProgressDialog:1.007'
+    implementation 'com.airbnb.android:lottie:4.2.1'
 }
