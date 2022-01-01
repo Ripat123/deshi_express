@@ -82,7 +82,7 @@ public class flash_screen extends AppCompatActivity {
         // Trigger the initial hide() shortly after the activity has been
         // created, to briefly hint to the user that UI controls
         // are available.
-        delayedHide(10,1000);
+        delayedHide(10,2000);
     }
 
     private final Runnable closeRunnable = new Runnable() {

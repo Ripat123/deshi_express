@@ -95,6 +95,7 @@ public class login extends AppCompatActivity {
             progressDialog.setLottieLocation("json_lottie/loading-pickupposaja.json");
             progressDialog.setLayoutColor(Color.WHITE);
             progressDialog.setLayoutRadius(13f);
+            progressDialog.setMessage("Loading...");
             progressDialog.setLayoutElevation(8f);
             progressDialog.show();
 
