@@ -66,14 +66,20 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageView
+
+                    <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/top_img_login"
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:src="@drawable/ic_login_cuate"
+                        android:layout_height="290dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="15dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/user_profile" />
 
 
                     <com.google.android.material.textfield.TextInputLayout

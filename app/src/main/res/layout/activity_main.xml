@@ -73,13 +73,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
+                    <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/top_img"
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
-                        android:src="@drawable/ic_charity_rafiki"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
+                        app:lottie_rawRes="@raw/courier_delivery"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
                         app:layout_constraintStart_toEndOf="@+id/login_btn"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

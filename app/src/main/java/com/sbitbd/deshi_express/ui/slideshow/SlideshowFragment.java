@@ -2,6 +2,7 @@ package com.sbitbd.deshi_express.ui.slideshow;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,9 +30,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.basusingh.beautifulprogressdialog.BeautifulProgressDialog;
 import com.google.android.material.textfield.TextInputLayout;
 import com.sbitbd.deshi_express.Config.config;
 import com.sbitbd.deshi_express.R;
+import com.sbitbd.deshi_express.login.login;
 import com.sbitbd.deshi_express.model.four_model;
 
 import org.json.JSONArray;
@@ -50,7 +53,7 @@ public class SlideshowFragment extends Fragment {
     private ConstraintLayout tracking_layout;
     protected ImageView track_checkimg_1, track_checkimg_2, track_checkimg_3, track_checkimg_4, track_checkimg_5,
             track_checkimg_6, track_checkimg_7, track_checkimg_8;
-    private ProgressDialog progressDialog;
+    private BeautifulProgressDialog progressDialog;
     private View root;
     private Button track_btn;
     private AutoCompleteTextView track_id;
@@ -151,7 +154,14 @@ public class SlideshowFragment extends Fragment {
 
     private void CONFIG(String id) {
         try {
-            progressDialog = ProgressDialog.show(root.getContext(), "", "Loading", false, false);
+            progressDialog = new BeautifulProgressDialog(getActivity(),
+                    BeautifulProgressDialog.withLottie, null);
+            progressDialog.setLottieLocation("json_lottie/loading-pickupposaja.json");
+            progressDialog.setLayoutColor(Color.WHITE);
+            progressDialog.setLayoutRadius(13f);
+            progressDialog.setMessage("Loading...");
+            progressDialog.setLayoutElevation(8f);
+            progressDialog.show();
             tracking_layout.setVisibility(View.GONE);
             reset();
             slideshowViewModel.getData().setValue(id);
