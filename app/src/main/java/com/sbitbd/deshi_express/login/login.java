@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.basusingh.beautifulprogressdialog.BeautifulProgressDialog;
 import com.sbitbd.deshi_express.Config.config;
 import com.sbitbd.deshi_express.Main_dashboard;
 import com.sbitbd.deshi_express.R;
@@ -32,7 +34,7 @@ public class login extends AppCompatActivity {
     private Button login,reg;
     private EditText user, pass;
     private login_controller login_controller = new login_controller();
-    private ProgressDialog progressDialog;
+    private BeautifulProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +90,14 @@ public class login extends AppCompatActivity {
                 Toast.makeText(login.this, "Empty Password!", Toast.LENGTH_SHORT).show();
                 return;
             }
-            progressDialog = ProgressDialog.show(login.this, "", "Loading...", false, false);
+            progressDialog = new BeautifulProgressDialog(login.this,
+                    BeautifulProgressDialog.withLottie, null);
+            progressDialog.setLottieLocation("json_lottie/loading-pickupposaja.json");
+            progressDialog.setLayoutColor(Color.WHITE);
+            progressDialog.setLayoutRadius(13f);
+            progressDialog.setLayoutElevation(8f);
+            progressDialog.show();
+
             StringRequest stringRequest = new StringRequest(Request.Method.POST, config.LOGIN,
                     new Response.Listener<String>() {
                         @Override
