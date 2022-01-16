@@ -695,6 +695,7 @@
                         app:layout_constraintStart_toStartOf="@+id/note_lay"
                         app:layout_constraintTop_toBottomOf="@+id/note_lay" />
 
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </ScrollView>
