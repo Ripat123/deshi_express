@@ -292,14 +292,14 @@
 
                     <ImageView
                         android:id="@+id/top_img_login"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="270dp"
+                        app:layout_constraintWidth_max="600dp"
                         android:src="@drawable/ic_checking_boxes_amico"
                         app:layout_constraintBottom_toTopOf="@+id/customerin_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/customerin_lay"
@@ -338,8 +338,7 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        app:layout_constraintWidth_max="600dp"
                         android:hint="@string/customer_name_optional"
                         app:boxCornerRadiusBottomEnd="10dp"
                         app:boxCornerRadiusBottomStart="10dp"
@@ -348,9 +347,8 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="clear_text"
                         app:layout_constraintBottom_toTopOf="@+id/info_img_t"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         app:layout_constraintTop_toBottomOf="@+id/customerin_lay"
                         app:startIconDrawable="@drawable/ic_round_drive_file_rename_outline_24">
 
@@ -368,8 +366,7 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        app:layout_constraintWidth_max="600dp"
                         android:hint="@string/phone_number"
                         app:boxCornerRadiusBottomEnd="10dp"
                         app:boxCornerRadiusBottomStart="10dp"
@@ -378,9 +375,8 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="clear_text"
                         app:layout_constraintBottom_toTopOf="@+id/cod_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         app:layout_constraintTop_toBottomOf="@+id/info_img"
                         app:startIconDrawable="@drawable/ic_round_local_phone_24">
 
@@ -398,8 +394,9 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:hint="@string/cod_amount"
                         app:boxCornerRadiusBottomEnd="10dp"
                         app:boxCornerRadiusBottomStart="10dp"
@@ -408,9 +405,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="clear_text"
                         app:layout_constraintBottom_toTopOf="@+id/district_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/phone_lay"
                         app:startIconDrawable="@drawable/ic_baseline_attach_money_24">
 
@@ -428,9 +422,10 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="20dp"
                         android:background="@drawable/edittext"
                         android:hint="@string/district"
                         app:boxCornerRadiusBottomEnd="10dp"
@@ -440,9 +435,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="dropdown_menu"
                         app:layout_constraintBottom_toTopOf="@+id/thana_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cod_lay"
                         app:startIconDrawable="@drawable/ic_round_checklist_24">
 
@@ -459,9 +451,10 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="20dp"
                         android:background="@drawable/edittext"
                         android:hint="@string/thana"
                         app:boxCornerRadiusBottomEnd="10dp"
@@ -471,8 +464,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="dropdown_menu"
                         app:layout_constraintBottom_toTopOf="@+id/address_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/district_lay"
                         app:startIconDrawable="@drawable/ic_round_checklist_24">
 
@@ -489,8 +480,9 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:hint="@string/address_optional"
                         app:boxCornerRadiusBottomEnd="10dp"
                         app:boxCornerRadiusBottomStart="10dp"
@@ -499,9 +491,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="clear_text"
                         app:layout_constraintBottom_toTopOf="@+id/service_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/thana_lay"
                         app:startIconDrawable="@drawable/ic_baseline_add_location_alt_24">
 
@@ -519,6 +508,9 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/edittext"
                         android:hint="@string/service"
@@ -530,8 +522,6 @@
                         android:visibility="gone"
                         app:endIconMode="dropdown_menu"
                         app:layout_constraintBottom_toTopOf="@+id/weight_lay"
-                        app:layout_constraintEnd_toEndOf="@+id/address_lay"
-                        app:layout_constraintStart_toStartOf="@+id/address_lay"
                         app:layout_constraintTop_toBottomOf="@+id/address_lay"
                         app:startIconDrawable="@drawable/ic_round_checklist_24">
 
@@ -548,9 +538,10 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="20dp"
                         android:background="@drawable/edittext"
                         android:hint="@string/weight_kg_optional"
                         app:boxCornerRadiusBottomEnd="10dp"
@@ -560,9 +551,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="dropdown_menu"
                         app:layout_constraintBottom_toTopOf="@+id/pachage_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/service_lay"
                         app:startIconDrawable="@drawable/ic_round_checklist_24">
 
@@ -579,9 +567,10 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="20dp"
                         android:background="@drawable/edittext"
                         android:hint="@string/package_optional"
                         app:boxCornerRadiusBottomEnd="10dp"
@@ -591,9 +580,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="dropdown_menu"
                         app:layout_constraintBottom_toTopOf="@+id/note_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/weight_lay"
                         app:startIconDrawable="@drawable/ic_round_checklist_24">
 
@@ -610,8 +596,9 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         android:hint="@string/note_optional"
                         app:boxCornerRadiusBottomEnd="10dp"
                         app:boxCornerRadiusBottomStart="10dp"
@@ -620,9 +607,6 @@
                         app:boxStrokeWidth="0dp"
                         app:endIconMode="clear_text"
                         app:layout_constraintBottom_toTopOf="@+id/parcel_submit"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/pachage_lay"
                         app:startIconDrawable="@drawable/ic_baseline_note_add_24">
 
@@ -642,8 +626,8 @@
                         android:layout_marginTop="5dp"
                         android:text="@string/info_img"
 
-                        app:layout_constraintEnd_toEndOf="@+id/note_lay"
-                        app:layout_constraintStart_toStartOf="@+id/note_lay"
+                        app:layout_constraintEnd_toEndOf="@+id/customer_lay"
+                        app:layout_constraintStart_toStartOf="@+id/customer_lay"
                         app:layout_constraintTop_toBottomOf="@+id/customer_lay" />
 
                     <com.google.android.material.button.MaterialButton
@@ -651,6 +635,7 @@
                         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        app:layout_constraintWidth_max="600dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:backgroundTint="@color/second_color"
@@ -662,19 +647,20 @@
                         android:textColor="@color/main_color"
                         app:icon="@drawable/ic_baseline_check_circle_24"
                         app:iconTint="@color/main_color"
-                        app:layout_constraintEnd_toEndOf="@+id/note_lay"
-                        app:layout_constraintStart_toStartOf="@+id/note_lay"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         app:layout_constraintTop_toBottomOf="@+id/info_img_t" />
 
                     <ImageView
                         android:id="@+id/info_img"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:scaleType="centerInside"
                         app:layout_constraintBottom_toTopOf="@+id/phone_lay"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         app:layout_constraintTop_toBottomOf="@+id/select_btn" />
 
                     <com.google.android.material.button.MaterialButton
@@ -691,11 +677,23 @@
                         app:cornerRadius="10dp"
                         app:icon="@drawable/ic_baseline_check_circle_24"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/note_lay"
-                        app:layout_constraintStart_toStartOf="@+id/note_lay"
+                        app:layout_constraintWidth_max="600dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guide2"
+                        app:layout_constraintStart_toStartOf="@+id/guide1"
                         app:layout_constraintTop_toBottomOf="@+id/note_lay" />
 
-
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guide1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.045"/>
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guide2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.955"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </ScrollView>
