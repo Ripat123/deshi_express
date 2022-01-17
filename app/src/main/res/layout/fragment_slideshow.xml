@@ -38,6 +38,7 @@
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeWidth="0dp"
+                app:layout_constraintWidth_max="600dp"
                 app:endIconMode="dropdown_menu"
                 android:background="@drawable/edittext"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +63,7 @@
                 android:paddingVertical="11dp"
                 android:text="@string/order_track"
                 android:textStyle="bold"
+                app:layout_constraintWidth_max="600dp"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/ic_round_manage_search_24"
                 app:layout_constraintEnd_toEndOf="@+id/invoice_lay"
@@ -70,11 +72,14 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/tracking_layout"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:layout_constraintWidth_max="600dp"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reg_submit">
 
                 <View

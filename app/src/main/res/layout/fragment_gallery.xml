@@ -20,13 +20,14 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/all_pro"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="12dp"
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
+                app:layout_constraintWidth_max="600dp"
                 app:cardElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -89,12 +90,13 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/canceled"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
                 android:theme="@style/card_main"
+                app:layout_constraintWidth_max="600dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -158,11 +160,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/balance_card"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
+                app:layout_constraintWidth_max="600dp"
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
@@ -227,11 +230,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/pending_card"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
+                app:layout_constraintWidth_max="600dp"
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
@@ -296,12 +300,13 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/last_day_card"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
                 android:theme="@style/card_main"
+                app:layout_constraintWidth_max="600dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -366,10 +371,11 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/amount_card"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
+                app:layout_constraintWidth_max="600dp"
                 android:layout_marginEnd="12dp"
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
@@ -435,7 +441,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/not_request"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
@@ -443,6 +449,7 @@
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
+                app:layout_constraintWidth_max="600dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/amount_card">
@@ -506,13 +513,14 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/total_rep"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
                 android:theme="@style/card_main"
                 app:cardCornerRadius="15dp"
+                app:layout_constraintWidth_max="600dp"
                 app:cardElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -572,9 +580,10 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/last_rec"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:layout_constraintWidth_max="600dp"
                 android:theme="@style/search_back"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
