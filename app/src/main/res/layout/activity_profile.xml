@@ -71,13 +71,10 @@
                         android:id="@+id/profile_img"
                         android:layout_width="180dp"
                         android:layout_height="180dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="8dp"
                         android:src="@drawable/ic_user"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
+                        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/img_edit"
@@ -87,6 +84,7 @@
                         android:focusable="true"
                         android:tooltipText="@string/img_upload"
                         app:cardCornerRadius="25dp"
+                        android:visibility="invisible"
                         app:layout_constraintBottom_toBottomOf="@+id/profile_img"
                         app:layout_constraintEnd_toEndOf="@+id/profile_img">
 
@@ -124,75 +122,69 @@
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/owner_name"
                         android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintBottom_toTopOf="@+id/textView10"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/divider11" />
 
                     <TextView
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/company_information"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView11"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/phone_number"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView12"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
                     <TextView
                         android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/email"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView13"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
                     <TextView
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/full_address"
                         android:textSize="15sp"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
                     <TextView
                         android:id="@+id/owner_nt"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
@@ -201,11 +193,10 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView10"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toEndOf="@+id/textView10"
                         app:layout_constraintTop_toTopOf="@+id/textView10" />
 
@@ -213,11 +204,10 @@
                         android:id="@+id/phone_nt"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView11"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
@@ -225,11 +215,10 @@
                         android:id="@+id/email_nt"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toTopOf="@+id/address_nt"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
@@ -237,10 +226,9 @@
                         android:id="@+id/address_nt"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/poppins_medium"
                         android:textSize="15sp"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toStartOf="@+id/company_nt"
                         app:layout_constraintTop_toTopOf="@+id/textView13" />
 
@@ -260,23 +248,46 @@
                         android:id="@+id/textView14"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginTop="12dp"
-                        android:layout_marginEnd="8dp"
+                        app:layout_constraintWidth_max="600dp"
                         android:text="@string/edit_more_txt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintTop_toBottomOf="@+id/divider12" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="@string/drawer_menu_settings"
                         android:textSize="17sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintStart_toStartOf="@+id/textView14"
                         app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.035" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.965" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.03" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </ScrollView>
 
