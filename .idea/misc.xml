@@ -99,7 +99,7 @@
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/all_consignments_fragment.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/app_bar_main.xml" value="0.18070652173913043" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/coverage_area_fragment.xml" value="0.18070652173913043" />
-        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/dashboard_card.xml" value="0.1" />
+        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/dashboard_card.xml" value="0.22" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/details_card.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/edit_customer.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_all.xml" value="0.25" />
@@ -108,7 +108,7 @@
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_cancelled.xml" value="0.18070652173913043" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_company_info.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_delivered.xml" value="0.18070652173913043" />
-        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_gallery.xml" value="0.1480978260869565" />
+        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_gallery.xml" value="0.22" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_in_review.xml" value="0.18070652173913043" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/fragment_other_account.xml" value="0.1" />
@@ -125,7 +125,7 @@
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/payment_card.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/pickup_lay.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/pricing_fragment.xml" value="0.22" />
-        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/report_card.xml" value="0.1480978260869565" />
+        <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/report_card.xml" value="0.22" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/return_card.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/shipment_lay.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/PC/Documents/deshi_express/app/src/main/res/layout/single_item.xml" value="0.1480978260869565" />

@@ -62,16 +62,19 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/all_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView1"
                         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
                     <View
@@ -132,16 +135,19 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/cancel_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
                         app:layout_constraintTop_toBottomOf="@+id/divider4" />
 
                     <View
@@ -202,16 +208,19 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/bal_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
                         app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
                     <View
@@ -272,16 +281,18 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/pen_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
                         app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
                     <View
@@ -342,17 +353,20 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/day_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="8dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
                         app:layout_constraintTop_toBottomOf="@+id/divider7" />
 
                     <View
@@ -413,16 +427,19 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/amount_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
                         app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
                     <View
@@ -485,16 +502,19 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/req_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
                         android:layout_marginEnd="20dp"
                         android:background="#00000000"
                         android:fontFamily="@font/adamina"
                         android:text="@string/_0"
+                        android:textAlignment="textEnd"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
                         app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
                     <View

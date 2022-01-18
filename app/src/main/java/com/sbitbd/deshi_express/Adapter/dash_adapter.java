@@ -127,11 +127,13 @@ public class dash_adapter extends RecyclerView.Adapter<dash_adapter.userHolder> 
                     case "6":
                         constraintLayout.setBackgroundResource(R.drawable.gradient6);
 
-                        homeViewModel.get_shipment(context1,user.getName(),name,"Select CAST((Count(id) " +
-                                "/ 100 * (Select Count(*) From delivery where position = '7')) as DECIMAL(10,2)) as id" +
-                                " From delivery where merchantId = '"+config.getUser(context)+"'");
+                        homeViewModel.get_shipment(context1,user.getName(),name,"Select CAST(((Select Count(*)" +
+                                " From delivery where position = '7' and merchantId = '"+config.getUser(context)+"')" +
+                                " / Count(*)) * 100 as DECIMAL(10,2)) as id From delivery where merchantId = '"+config.getUser(context)+"'");
+
                         break;
                 }
+
 
                 cardView.setOnClickListener(new View.OnClickListener() {
                     @Override

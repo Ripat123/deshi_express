@@ -657,14 +657,14 @@ public class HomeViewModel extends ViewModel {
 
                             if (!response.trim().equals("")) {
                                 if (text.equals("Success"))
-                                    textView.setText(text + " - " + response.trim() + "%");
+                                    textView.setText(text + ": " + response.trim() + "%");
                                 else
-                                    textView.setText(text + " - " + response.trim());
+                                    textView.setText(text + ": " + response.trim());
                             } else {
                                 if (text.equals("Success"))
-                                    textView.setText(text + " - 0%");
+                                    textView.setText(text + ": 0%");
                                 else
-                                    textView.setText(text + " - 0");
+                                    textView.setText(text + ": 0");
                             }
 
                         }
@@ -707,12 +707,12 @@ public class HomeViewModel extends ViewModel {
                                     JSONArray result = jsonObject.getJSONArray(config.RESULT);
                                     JSONObject collegeData = result.getJSONObject(0);
                                     if (collegeData.getString(config.ONE).trim().equals("null") || collegeData.getString(config.ONE).trim().equals("")) {
-                                        textView.setText(text + " - 0(0)");
+                                        textView.setText(text + ": 0(0)");
                                     } else
-                                        textView.setText(text + " - " + collegeData.getString(config.ONE)
+                                        textView.setText(text + ": " + collegeData.getString(config.ONE)
                                                 + "(" + collegeData.getString(config.TWO) + ")");
                                 } else {
-                                    textView.setText(text + " - 0(0)");
+                                    textView.setText(text + ": 0(0)");
                                 }
                             } catch (Exception e) {
                             }

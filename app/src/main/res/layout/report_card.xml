@@ -51,16 +51,20 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/r_card_count"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
                 android:background="#00000000"
                 android:fontFamily="@font/adamina"
                 android:text="@string/_0"
+                android:maxLines="1"
+                android:textAlignment="textEnd"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/r_card_img"
                 app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
             <View

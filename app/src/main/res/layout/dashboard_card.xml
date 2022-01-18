@@ -77,6 +77,7 @@
                 android:textColor="@color/white"
                 android:textSize="17sp"
                 android:textStyle="bold"
+                android:textAlignment="center"
                 android:background="@color/opac"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
