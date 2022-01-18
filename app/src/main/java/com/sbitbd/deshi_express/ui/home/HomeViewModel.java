@@ -371,7 +371,7 @@ public class HomeViewModel extends ViewModel {
             String sql = "INSERT INTO pickup_req_agent (id,pickup_id,agent_id,merchant_id,invoice_id,note," +
                     "estimated,req_date,status,created_at,updated_at) VALUES ('" + paid + "','" + pid + "'," +
                     "'" + config.getAgent(context) + "','" + config.getUser(context) + "','" + did + "'," +
-                    "'" + note + "','" + estimate + "',CURRENT_TIMESTAMP,'0',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)";
+                    "'" + note + "','" + estimate + "',current_date,'0',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)";
             StringRequest stringRequest = new StringRequest(Request.Method.POST, config.INSERT,
                     new Response.Listener<String>() {
                         @Override

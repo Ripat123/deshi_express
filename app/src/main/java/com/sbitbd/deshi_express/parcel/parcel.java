@@ -929,7 +929,7 @@ public class parcel extends AppCompatActivity {
                         "  customer_address,note,deliveryonlyornot,product_weight," +
                         "package,coll_amount,shipmentcharges,codchargeits," +
                         "  packchrgs,discount,totalamounts,session_id,status," +
-                        "position,pickup_req_status,created_at,pickup_agent_id,updated_at) VALUES ('" + id + "','" + customer_in.getText().toString().trim() + "'" +
+                        "position,created_at,pickup_agent_id,updated_at) VALUES ('" + id + "','" + customer_in.getText().toString().trim() + "'" +
                         ",'" + config.getUser(parcel.this) + "','merchant','" + customer.getText().toString().trim() + "'" +
                         ",'" + phone.getText().toString().trim() + "','" + district_id + "','" + thana_id + "'," +
                         "'" + address.getText().toString().trim() + "','" + note.getText().toString().trim() + "','2'," +
@@ -937,7 +937,7 @@ public class parcel extends AppCompatActivity {
                         "'" + ship_a.getText().toString().trim() + "','" + cod_a.getText().toString().trim() + "'," +
                         "'" + pack_a.getText().toString() + "','" + dis_a.getText().toString().trim() + "'," +
                         "'" + net_total_amount.getText().toString().trim() + "','" + session + "','ordered'," +
-                        "'2','0',CURRENT_TIMESTAMP,'" + config.getAgent(parcel.this) + "',CURRENT_TIMESTAMP)";
+                        "'2',CURRENT_TIMESTAMP,'" + config.getAgent(parcel.this) + "',CURRENT_TIMESTAMP)";
             } else {
                 sql = "insert into delivery (id,customer_invoice,merchantId,type,customer_name," +
                         "customer_phone,customer_disctrict,customer_thana," +
