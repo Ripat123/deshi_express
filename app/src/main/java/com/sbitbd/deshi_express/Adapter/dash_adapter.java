@@ -113,7 +113,8 @@ public class dash_adapter extends RecyclerView.Adapter<dash_adapter.userHolder> 
                     case "3":
                         constraintLayout.setBackgroundResource(R.drawable.gradient3);
                         homeViewModel.get_shipment(context1,user.getName(),name,"SELECT COUNT(id) " +
-                                "AS 'id' FROM delivery where merchantId = '" + config.getUser(context) + "' and position = '4'");
+                                "AS 'id' FROM delivery where merchantId = '"+config.getUser(context)+"'" +
+                                " and position > '3' and position < '7' GROUP BY merchantId");
                         break;
                     case "4":
                         constraintLayout.setBackgroundResource(R.drawable.gradient4);
@@ -121,8 +122,9 @@ public class dash_adapter extends RecyclerView.Adapter<dash_adapter.userHolder> 
                         break;
                     case "5":
                         constraintLayout.setBackgroundResource(R.drawable.gradient5);
-                        homeViewModel.get_shipment(context1,user.getName(),name,"SELECT COUNT(id) " +
-                                "AS 'id' FROM delivery where merchantId = '" + config.getUser(context) + "' and position = '11'");
+                        homeViewModel.get_shipment(context1,user.getName(),name,"SELECT COUNT(*) " +
+                                "AS 'id' FROM delivery inner join agentassign on delivery.id=agentassign." +
+                                "invoice_id where agentassign.merchant_id = '" + config.getUser(context) + "' and agentassign.status = '19'");
                         break;
                     case "6":
                         constraintLayout.setBackgroundResource(R.drawable.gradient6);
