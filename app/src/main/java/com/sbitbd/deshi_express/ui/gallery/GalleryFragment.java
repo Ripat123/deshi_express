@@ -119,10 +119,17 @@ public class GalleryFragment extends Fragment {
                      config.getUser(root1.getContext().getApplicationContext()) + "' and position = '7'");
             get_data(cancal,root1.getContext().getApplicationContext(),"SELECT COUNT(id) AS 'id' FROM delivery WHERE merchantId = '" +
                     config.getUser(root1.getContext().getApplicationContext()) + "' and position = '8'");
-            get_data(balance,root1.getContext().getApplicationContext(),"select sum(coll_amount - total_amount) as 'id'" +
-                    " from merchant_invoice_charge where merchant_id = '"+config.getUser(root1.getContext().getApplicationContext())+"' and paid_status != '1'");
+            get_data(balance,root1.getContext().getApplicationContext(),"SELECT cast(SUM(merchant_balance_sheet.coll_amount - (merchant_balance_sheet." +
+                    "total_amount + (select sum(merchant_pay.collection) " +
+                    "from merchant_pay where merchant_pay.merchant_id = '" + config.getUser(getContext()) + "'))) as DECIMAL(10,2))" +
+                    " as 'id' from merchant_balance_sheet WHERE merchant_balance_sheet." +
+                    "merchant_id = '" + config.getUser(getContext()) + "'");
             get_data(total_pending,root1.getContext().getApplicationContext(),"SELECT COUNT(id) as 'id' from delivery " +
                     "where merchantId = '"+config.getUser(root1.getContext().getApplicationContext())+"' and (position = '1' or position = '0')");
+            get_data(last_day,root1.getContext().getApplicationContext(),"select sum(totalamounts) as 'id' " +
+                    "from delivery where merchantId = '"+config.getUser(root1.getContext().getApplicationContext())+"' and success_date LIKE '"+config.get_fullDate()+"%' and position = '7'");
+            get_data(pending_amount,root1.getContext().getApplicationContext(),"select sum(coll_amount) as 'id' " +
+                    "from delivery where merchantId = '"+config.getUser(root1.getContext().getApplicationContext())+"' and position < '7'");
             get_data(req_count,root1.getContext().getApplicationContext(),"select COUNT(id) as 'id' " +
                     "from delivery where merchantId = '"+config.getUser(root1.getContext().getApplicationContext())+"' and pickup_req_status is null");
 

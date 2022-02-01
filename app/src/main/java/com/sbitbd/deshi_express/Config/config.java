@@ -18,6 +18,8 @@ import com.android.volley.toolbox.Volley;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -346,5 +348,12 @@ public class config {
         } catch (Exception e) {
         }
         return null;
+    }
+
+    public String get_fullDate() {
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat mdformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String strDate = mdformat.format(calendar.getTime());
+        return strDate;
     }
 }
