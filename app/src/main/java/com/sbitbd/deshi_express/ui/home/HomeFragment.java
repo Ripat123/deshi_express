@@ -229,6 +229,9 @@ public class HomeFragment extends Fragment {
                             "" + config.getUser(root1.getContext().getApplicationContext()) + "'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_credit_card_payment_cuate, "Total COD", "0");
             state_rep_adapter.addUser(state_rep_model);
+            homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
+                    state_rep_model, "SELECT sum(coll_amount) AS 'id' FROM delivery WHERE merchantId = '" +
+                            "" + config.getUser(root1.getContext().getApplicationContext()) + "' and position > '2'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_coronavirus_delivery_preventions_amico, "Total Delivered", "0");
             state_rep_adapter.addUser(state_rep_model);
             homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
@@ -241,12 +244,24 @@ public class HomeFragment extends Fragment {
                             "" + config.getUser(root1.getContext().getApplicationContext()) + "' and position = '7'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_plain_credit_card_pana, "Total Cost", "0");
             state_rep_adapter.addUser(state_rep_model);
+            homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
+                    state_rep_model, "SELECT sum(total_amount) AS 'id' FROM merchant_balance_sheet WHERE merchant_id = '" +
+                            "" + config.getUser(root1.getContext().getApplicationContext()) + "'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_credit_card_payment_cuate, "Delivery Charge", "0");
             state_rep_adapter.addUser(state_rep_model);
+            homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
+                    state_rep_model, "SELECT sum(shipmentcharges) AS 'id' FROM merchant_balance_sheet WHERE merchant_id = '" +
+                            "" + config.getUser(root1.getContext().getApplicationContext()) + "'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_credit_card_payment_cuate, "COD Charge", "0");
             state_rep_adapter.addUser(state_rep_model);
+            homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
+                    state_rep_model, "SELECT sum(codchargeits) AS 'id' FROM merchant_balance_sheet WHERE merchant_id = '" +
+                            "" + config.getUser(root1.getContext().getApplicationContext()) + "'"+ext);
             state_rep_model = new state_rep_model(R.drawable.ic_plain_credit_card_pana, "Other Cost", "0");
             state_rep_adapter.addUser(state_rep_model);
+            homeViewModel.update_home_data(root1.getContext().getApplicationContext(), state_rep_adapter,
+                    state_rep_model, "SELECT sum(packchrgs) AS 'id' FROM merchant_balance_sheet WHERE merchant_id = '" +
+                            "" + config.getUser(root1.getContext().getApplicationContext()) + "'"+ext);
             rep_rec.setAdapter(state_rep_adapter);
         } catch (Exception e) {
         }
