@@ -207,7 +207,7 @@ public class HomeViewModel extends ViewModel {
         try {
             progressDialog = ProgressDialog.show(context, "", "Loading...", false, false);
             String sql = "select id from pickup_req_agent where req_date = current_date and merchant_id" +
-                    " = '"+config.getUser(context)+"'";
+                    " = '" + config.getUser(context) + "'";
             StringRequest stringRequest = new StringRequest(Request.Method.POST, config.GET_ID,
                     new Response.Listener<String>() {
                         @Override
@@ -695,8 +695,12 @@ public class HomeViewModel extends ViewModel {
 
     public void get_balance(Context context, String text, TextView textView) {
         try {
-            String sql = "SELECT SUM(coll_amount-total_amount) as 'one',count(id) as 'two' from merchant_invoice_charge " +
-                    "WHERE merchant_id = '" + config.getUser(context) + "' and paid_status = '0' and payment_req_status ='0'";
+            String sql = "SELECT cast(SUM(merchant_balance_sheet.coll_amount - (merchant_balance_sheet." +
+                    "total_amount + (select sum(merchant_pay.collection) " +
+                    "from merchant_pay where merchant_pay.merchant_id = '" + config.getUser(context) + "'))) as DECIMAL(10,2))" +
+                    " as 'one',(select count(id) from merchant_invoice_charge where merchant_id = '" + config.getUser(context) + "' " +
+                    "and paid_status = '0' and payment_req_status ='0') as 'two' from merchant_balance_sheet WHERE merchant_balance_sheet." +
+                    "merchant_id = '" + config.getUser(context) + "'";
             StringRequest stringRequest = new StringRequest(Request.Method.POST, config.TWO_DIMENSION,
                     new Response.Listener<String>() {
                         @Override
